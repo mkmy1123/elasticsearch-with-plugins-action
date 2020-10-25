@@ -13,7 +13,7 @@ if [ -n "${PLUGINS_STR}" ]; then
   ARRAY=(${PLUGINS_STR})
   for i in "${ARRAY[@]}"
   do
-    PLUGIN_INSTALL_CMD+="elasticseach-plugin install --batch ${i} &&"
+    PLUGIN_INSTALL_CMD+="elasticseach-plugin install --batch ${i} && "
   done
 fi
 
